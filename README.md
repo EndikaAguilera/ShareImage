@@ -1,12 +1,12 @@
 # ShareImage
 Android Share Image Example (without permissions)
 
-# Usage
+## Usage
 ```java
 ShareUtils.shareImage(context, bitmapToShare, "Your Share Message");
 ```
 
-# Requirements
+## Requirements
   
   - Add to string.xml
 ```java
@@ -22,7 +22,7 @@ ShareUtils.shareImage(context, bitmapToShare, "Your Share Message");
 </paths>
 ```
 
-  - Add is as provider to the AndroidManifest.xml
+  - Add the previous created .xml file as provider to the AndroidManifest.xml
 ```java
     <application
     // manifest application normal code
@@ -42,3 +42,6 @@ ShareUtils.shareImage(context, bitmapToShare, "Your Share Message");
 
     </application>
 ```
+
+# Known Issues
+  - Only approach you can share the text in the Facebook is using Facebook SDK, so the message will be ignored.
