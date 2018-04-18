@@ -11,6 +11,8 @@ import com.thisobeystudio.shareimage.share.ShareUtils;
 
 public class MainActivity extends AppCompatActivity {
 
+    private Bitmap bitmap = null;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,7 +26,9 @@ public class MainActivity extends AppCompatActivity {
         ImageView demoImageView = findViewById(R.id.demo_image_view);
 
         // get bitmap from imageView
-        final Bitmap bitmap = ((BitmapDrawable) demoImageView.getDrawable()).getBitmap();
+        BitmapDrawable bitmapDrawable = (BitmapDrawable) demoImageView.getDrawable();
+        if (bitmapDrawable != null)
+            bitmap = bitmapDrawable.getBitmap();
 
         // set onClick listener to demo share button
         findViewById(R.id.share_btn).setOnClickListener(new View.OnClickListener() {
