@@ -47,5 +47,5 @@ ShareUtils.shareImage(context, bitmapToShare, "Your Share Message");
   - Only approach you can share the text in the Facebook is using Facebook SDK, so the message will be ignored.
   
 ## Screen Preview
-![screen](../master/art/screenshot_share_image.png)
+![screen](https://raw.githubusercontent.com/endikaaguilera/myreposassets/master/share_image/screenshot_share_image.png)
 
